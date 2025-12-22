@@ -13,9 +13,7 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd4azl4ZHl4YXgxeXJ5cHJ5cHJ5cHJ5cHJ5cHJ5cHJ5cHJ5cHJ5cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dPHd0yYd3wzP9r818D/giphy.gif" alt="AI Neural Network" width="600">
-</p>
+
 
 </div>
 
