@@ -1,32 +1,76 @@
-🏦 Customer Churn Prediction App
-🚀 Overview
-This is an end-to-end Deep Learning web application designed to predict customer churn. Built using TensorFlow and Streamlit, the app utilizes a trained Artificial Neural Network (ANN) to analyze customer demographics and financial data, determining the likelihood of a customer leaving the bank.
+<div align="center">
 
-Customer churn prediction is a vital business metric, allowing companies to proactively identify at-risk customers and improve retention strategies.
+# 🏦 Customer Churn Prediction
 
-✨ Key Features
-Deep Learning Model: Powered by a Multi-Layer Perceptron (ANN) built with TensorFlow/Keras for high-accuracy classification.
+### A Deep Learning Web Application powered by TensorFlow & Streamlit
 
-Real-time Predictions: Users can input customer details (Credit Score, Geography, Age, Balance, etc.) and get instant churn probability results.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url-here.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Interactive UI: A clean and simple web interface built with Streamlit.
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd4azl4ZHl4YXgxeXJ5cHJ5cHJ5cHJ5cHJ5cHJ5cHJ5cHJ5cHJ5cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dPHd0yYd3wzP9r818D/giphy.gif" alt="AI Neural Network" width="600">
+</p>
 
-Data Preprocessing: Handles categorical data encoding (Label Encoding & One-Hot Encoding) and feature scaling automatically using Scikit-Learn pipelines.
+</div>
 
-🛠️ Tech Stack
-Frontend: Streamlit
+---
 
-Machine Learning: TensorFlow (Keras), Scikit-Learn
+## 🚀 Overview
 
-Data Processing: Pandas, NumPy
+**Customer Churn Prediction** is an end-to-end Deep Learning application designed to help businesses retain customers. By analyzing demographic and financial data, the Artificial Neural Network (ANN) predicts the likelihood of a customer leaving the bank.
 
-Model Storage: Pickle (for saving the trained model, scalers, and encoders)
+This project demonstrates the full machine learning pipeline: from data preprocessing and feature engineering to model training and deployment via a web interface.
 
-📊 How It Works
-Input Data: The user enters customer data (e.g., Credit Score, Geography, Gender, Age, Tenure, Balance, Number of Products, etc.) via the sidebar or main form.
+## ✨ Key Features
 
-Preprocessing: The app loads pre-trained encoders and scalers to transform the input data into the format required by the neural network.
+- **🧠 Deep Learning Engine:** Utilizes a Multi-Layer Perceptron (ANN) built with **TensorFlow/Keras**.
+- **⚡ Real-Time Inference:** Instant churn probability calculations based on user inputs.
+- **🎨 Interactive UI:** A clean, user-friendly interface built with **Streamlit**.
+- **🔄 Automated Preprocessing:** Integrated pipelines for Label Encoding, One-Hot Encoding, and Feature Scaling (StandardScaler).
 
-Inference: The processed data is passed to the loaded ANN model.
+## 🛠️ Technologies Used
 
-Output: The model returns a probability score (0 to 1). If the probability is greater than 0.5, the customer is classified as "Likely to Churn"; otherwise, they are "Likely to Stay."
+| Category | Technologies |
+|:---:|:---|
+| **Frontend** | Streamlit |
+| **Deep Learning** | TensorFlow, Keras |
+| **Data Processing** | Pandas, NumPy, Scikit-Learn |
+| **Model Serialization** | Pickle |
+| **Version Control** | Git, GitHub |
+
+---
+
+## 📂 Project Structure
+
+```bash
+ANN-Classification-Churn/
+├── app.py                   # Main Streamlit application entry point
+├── experiments.ipynb        # Jupyter Notebook for EDA and Model Training
+├── model.h5                 # Trained Keras ANN model
+├── label_encoder_gender.pkl # Serialized Label Encoder (Gender)
+├── onehot_encoder_geo.pkl   # Serialized OneHot Encoder (Geography)
+├── scaler.pkl               # Serialized Standard Scaler
+├── requirements.txt         # Project dependencies
+└── README.md                # Project documentation
+
+⚙️ Installation & Setup
+Follow these steps to run the app locally on your machine.
+
+1. Clone the Repository
+git clone [https://github.com/shivaji2001/ANN-Classification-Churn.git](https://github.com/shivaji2001/ANN-Classification-Churn.git)
+cd ANN-Classification-Churn
+
+2. Create a Virtual Environment (Optional but Recommended)
+python -m venv venv
+# Windows
+.\venv\Scripts\activate
+# Mac/Linux
+source venv/bin/activate
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+4. Run the Application
+streamlit run app.py
